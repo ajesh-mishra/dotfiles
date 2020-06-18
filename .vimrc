@@ -6,6 +6,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set incsearch
+set relativenumber
 
 colorscheme Default
 
