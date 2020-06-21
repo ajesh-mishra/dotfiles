@@ -3,27 +3,17 @@ function fish_greeting
 end
 
 function fish_prompt
-#  tput bold
-#  tput setaf 228 
-#  tput setb 7 
- 
   echo \n
   echo -n "  "
-  echo -n (fish_default_mode_prompt)
+  printf '%s' (fish_default_mode_prompt)
+
   tput rev; 
   echo -n " "
   echo -n (basename (pwd))
   echo -n "/ "
   tput sgr0;
-  set branch (git branch 2> /dev/null | grep "\*" | awk '{ print $2 }')
-  
-  if test ! -z "$branch"
-    echo -n " ("
-    echo -n $branch
-    echo -n ")"
-  end
-  
 
+  printf '%s' (fish_git_prompt)
   echo -n ' 💰 '
 end
 
