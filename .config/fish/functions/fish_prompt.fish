@@ -1,3 +1,7 @@
+function fish_greeting
+  neofetch
+end
+
 function fish_prompt
 #  tput bold
 #  tput setaf 228 
@@ -5,6 +9,7 @@ function fish_prompt
  
   echo \n
   echo -n "  "
+  echo -n (fish_default_mode_prompt)
   tput rev; 
   echo -n " "
   echo -n (basename (pwd))
@@ -21,3 +26,4 @@ function fish_prompt
 
   echo -n ' 💰 '
 end
+
