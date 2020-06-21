@@ -8,5 +8,7 @@ set smartindent
 set incsearch
 set relativenumber
 
-colorscheme Default
+
+call plug#begin('~/.vim/plugged')
+call plug#end()
 
