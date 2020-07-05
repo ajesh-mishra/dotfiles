@@ -8,7 +8,3 @@ set smartindent
 set incsearch
 set relativenumber
 
-
-call plug#begin('~/.vim/plugged')
-call plug#end()
-
