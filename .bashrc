@@ -163,5 +163,6 @@ ex ()
 
 source /usr/share/fzf/key-bindings.bash
 source /usr/share/fzf/completion.bash
-
 source /home/ajesh/.config/broot/launcher/bash/br
+
+fish
